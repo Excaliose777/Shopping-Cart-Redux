@@ -16,12 +16,13 @@ const initialState={
 //     .catch((err) => console.log(err))
 // })
 
-export const getCartItems  = createAsyncThunk('cart/getCartItems', async () => {
+export const getCartItems  = createAsyncThunk('cart/getCartItems', async (thunkAPI) => {
     try{
         const resp = await axios(url)
         return resp.data
     }catch(error){
         console.error(error)
+        return thunkAPI.rejectedWithValue("Something went wrong")
     }
 })
 
@@ -64,7 +65,7 @@ const cartSlice = createSlice({
             state.isLoading = false
             state.cartItems = action.payload
         },
-        [getCartItems.rejected]: (state) =>{
+        [getCartItems.rejected]: (state, action) =>{
             state.isLoading = false
         }
     }
