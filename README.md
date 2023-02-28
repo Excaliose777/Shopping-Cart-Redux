@@ -1,9 +1,5 @@
 # Redux Toolkit
 
-#### React Course
-
-[My React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
-
 #### Support
 
 Find the App Useful? [You can always buy me a coffee](https://www.buymeacoffee.com/johnsmilga)
@@ -727,5 +723,6 @@ const cartSlice = createSlice({
   },
 });
 ```
-#   S h o p p i n g - C a r t - R e d u x  
- 
+#� �S�h�o�p�p�i�n�g�-�C�a�r�t�-�R�e�d�u�x�
+�
+�
